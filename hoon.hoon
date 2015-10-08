@@ -5,7 +5,7 @@
   |=  a=@
     =+  q=[=(0 (mod a 3)) =(0 (mod a 5))]
     ?+  q  <a>
-      [& &]  "fizzbuzz"
-      [& |]  "fizz"
-      [| &]  "buzz"
+      [& &]  "FizzBuzz"
+      [& |]  "Fizz"
+      [| &]  "Buzz"
     ==
