@@ -1,0 +1,75 @@
+IT'S SHOWTIME
+
+    HEY CHRISTMAS TREE limit
+        YOU SET US UP 100
+    HEY CHRISTMAS TREE index
+        YOU SET US UP 1
+    HEY CHRISTMAS TREE loop
+        YOU SET US UP @NO PROBLEMO
+    HEY CHRISTMAS TREE mod3
+        YOU SET US UP 1
+    HEY CHRISTMAS TREE result3
+        YOU SET US UP @I LIED
+    HEY CHRISTMAS TREE mod5
+        YOU SET US UP 1
+    HEY CHRISTMAS TREE result5
+        YOU SET US UP @I LIED
+    HEY CHRISTMAS TREE mod15
+        YOU SET US UP 1
+    HEY CHRISTMAS TREE result15
+        YOU SET US UP @I LIED
+
+    STICK AROUND loop
+        GET TO THE CHOPPER mod3
+            HERE IS MY INVITATION index
+                I LET HIM GO 3
+            ENOUGH TALK
+        GET TO THE CHOPPER result3
+            HERE IS MY INVITATION mod3
+            YOU ARE NOT YOU YOU ARE ME 0
+        ENOUGH TALK
+
+        GET TO THE CHOPPER mod5
+            HERE IS MY INVITATION index
+                I LET HIM GO 5
+            ENOUGH TALK
+        GET TO THE CHOPPER result5
+            HERE IS MY INVITATION mod5
+            YOU ARE NOT YOU YOU ARE ME 0
+        ENOUGH TALK
+
+        GET TO THE CHOPPER mod15
+            HERE IS MY INVITATION index
+                I LET HIM GO 15
+            ENOUGH TALK
+        GET TO THE CHOPPER result15
+            HERE IS MY INVITATION mod15
+            YOU ARE NOT YOU YOU ARE ME 0
+        ENOUGH TALK
+
+        BECAUSE I'M GOING TO SAY PLEASE result15
+            TALK TO THE HAND "fizzbuzz"
+        BULLSHIT
+            BECAUSE I'M GOING TO SAY PLEASE result3
+                TALK TO THE HAND "fizz"
+            BULLSHIT
+                BECAUSE I'M GOING TO SAY PLEASE result5
+                    TALK TO THE HAND "buzz"
+                BULLSHIT
+                    TALK TO THE HAND index
+                YOU HAVE NO RESPECT FOR LOGIC
+            YOU HAVE NO RESPECT FOR LOGIC
+        YOU HAVE NO RESPECT FOR LOGIC
+
+
+        GET TO THE CHOPPER loop
+            HERE IS MY INVITATION limit
+            LET OFF SOME STEAM BENNET index
+        ENOUGH TALK
+        GET TO THE CHOPPER index
+            HERE IS MY INVITATION index
+            GET UP 1
+        ENOUGH TALK
+    CHILL
+
+YOU HAVE BEEN TERMINATED
