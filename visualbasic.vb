@@ -15,7 +15,7 @@
         Return num.ToString
     End Function
     Sub Main()
-        For i = 1 To 100
+        For i As Integer  = 1 To 100
             Console.WriteLine(FizzBuzz(i))
         Next
         Console.Read()
