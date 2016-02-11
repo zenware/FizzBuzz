@@ -9,4 +9,3 @@ if !mod5!==0 set print=!print!Buzz
 if "!print!"=="" set print=%%i
 echo !print!
 )
-pause
