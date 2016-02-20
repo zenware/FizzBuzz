@@ -1,10 +1,10 @@
 fizzBuzz(num) {
-	if (num % 3 == 0) {
-       print("Fizz\n")
-    } else if (num % 5 == 0) {
-        print("Buzz\n")
-    } else if (num % 15 == 0) {
-         print("FizzBuzz\n")
+	if (num % 3 == 0 && num % 5 == 0) {
+       print("FizzBuzz\n")
+    } else if (num % 3 == 0) {
+        print("Fizz\n")
+    } else if ( num % 5 == 0) {
+         print("Buzz\n")
     } else {
          printf("%d\n", num)
     }
