@@ -48,13 +48,13 @@ IT'S SHOWTIME
         ENOUGH TALK
 
         BECAUSE I'M GOING TO SAY PLEASE result15
-            TALK TO THE HAND "fizzbuzz"
+            TALK TO THE HAND "FizzBuzz"
         BULLSHIT
             BECAUSE I'M GOING TO SAY PLEASE result3
-                TALK TO THE HAND "fizz"
+                TALK TO THE HAND "Fizz"
             BULLSHIT
                 BECAUSE I'M GOING TO SAY PLEASE result5
-                    TALK TO THE HAND "buzz"
+                    TALK TO THE HAND "Buzz"
                 BULLSHIT
                     TALK TO THE HAND index
                 YOU HAVE NO RESPECT FOR LOGIC
