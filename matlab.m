@@ -7,7 +7,7 @@ for inum = 1:100
 	fizzbuzz = [fizzbuzz 'Buzz'];
   end
   if isempty(fizzbuzz)
-	disp(inum)
+	disp(num2str(inum))
   else
 	disp(fizzbuzz)
   end
