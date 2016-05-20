@@ -2,7 +2,7 @@ proc fizzbuzz n {
     switch -regexp [list $n [expr {$n % 3}]] {
         {[05] 0} {list fizzbuzz}
         {[^05] 0} {list fizz}
-        {[05] [1-9]} {list buzz}
+        {[05] [12]} {list buzz}
         default {list $n}
     }
 }
