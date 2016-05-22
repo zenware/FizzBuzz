@@ -1,4 +1,4 @@
-fn fizzbuzz(i: i32) {
+fn fizzbuzz(i: u8) {
   if i % 15 == 0 {
     println!("FizzBuzz");
   } else if i % 3 == 0 {
