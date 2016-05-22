@@ -1,7 +1,7 @@
 object Scala {
 
   def main(args: Array[String]): Unit = {
-    for (var i <- 1 to 100) {
+    for (i <- 1 to 100) {
       fizzBuzz(i);
     }
   }
