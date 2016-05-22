@@ -11,7 +11,7 @@ function fizz_buzz(num)
     }
 }
 
-for (var i = 0; i <= 100; i++)
+for (var i = 1; i <= 100; i++)
 {
     fizz_buzz(i);
 }
