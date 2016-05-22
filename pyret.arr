@@ -5,10 +5,10 @@ where:
   # Tests for `multiple-of`
   multiple-of(4, 2) is true
   multiple-of(4, 3) is false
-  
+
   10 is%(multiple-of) 5
   10 is-not%(multiple-of) 6
-  
+
   5 satisfies multiple-of(15, _)
   5 violates  multiple-of(16, _)
 end
@@ -22,6 +22,6 @@ fun fizz-buzz(n):
   end
 end
 
-for each(n from range(1, 100)):
+for each(n from range(1, 101)):
   fizz-buzz(n)
 end

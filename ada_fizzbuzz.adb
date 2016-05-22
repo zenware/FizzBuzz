@@ -1,7 +1,6 @@
 -- Note: GNAT complains if the unit is simply named "Ada" since that is a system
 --  unit. gnatmake silently refuses to do anything.
 
-with Ada.Strings.Bounded;
 with Ada.Text_IO;
 
 procedure Ada_FizzBuzz is
@@ -10,13 +9,13 @@ procedure Ada_FizzBuzz is
    function FizzBuzz(N : Integer) return String is
    begin
       if N mod 3 = 0 and N mod 5 = 0 then
-         return "fizzbuzz";
+         return "Fizzbuzz";
       elsif N mod 3 = 0 then
-         return "fizz";
+         return "Fizz";
       elsif N mod 5 = 0 then
-         return "buzz";
+         return "Buzz";
       else
-         return Integer'Image(N);
+         return Integer'Image(N)(2 .. Integer'Image(N)'Last);
       end if;
    end FizzBuzz;
 begin

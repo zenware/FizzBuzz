@@ -19,9 +19,9 @@
 fizz(N) = (if N mod 3 = 0 then yes else no).
 buzz(N) = (if N mod 5 = 0 then yes else no).
 
-fizzbuzz(_, yes, yes) = "fizzbuzz".
-fizzbuzz(_, yes, no)  = "fizz".
-fizzbuzz(_, no, yes)  = "buzz".
+fizzbuzz(_, yes, yes) = "FizzBuzz".
+fizzbuzz(_, yes, no)  = "Fizz".
+fizzbuzz(_, no, yes)  = "Buzz".
 fizzbuzz(N, no, no)   = from_int(N).
 
 :- pred print_fizzbuzz(int::in, int::in, io::di, io::uo) is det.
