@@ -1,7 +1,7 @@
-fizz_buzz <- function(num){
-  if(!(num%%3L)) result <- 'Fizz' 
-  if(!(num%%5L)) result <- paste0(ifelse(exists('result'),result,''),'Buzz') 
-  print(ifelse(exists('result'),result,num))
+fizz_buzz <- function(num_array){
+result_array <- paste0(ifelse(num_array%%3L,'','Fizz'),ifelse(num_array%%5L,'','Buzz')
+result_array[result_array==''] <- num_array[result_array=='']
+print(result_array)
 }
 
-sapply(seq_len(100L),fizz_buzz)
+fizz_buzz(1:100)
