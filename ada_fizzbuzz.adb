@@ -9,7 +9,7 @@ procedure Ada_FizzBuzz is
    function FizzBuzz(N : Integer) return String is
    begin
       if N mod 3 = 0 and N mod 5 = 0 then
-         return "Fizzbuzz";
+         return "FizzBuzz";
       elsif N mod 3 = 0 then
          return "Fizz";
       elsif N mod 5 = 0 then
