@@ -1,0 +1,28 @@
+ORIGIN '~beta/basiclib/betaenv';
+-- program: Descriptor --
+(#
+   i: @integer;
+   fizzbuzz:
+     (#
+        number: @integer;
+        fizzy: (# n: @integer enter n exit n mod 3 = 0 #);
+        buzzy: (# n: @integer enter n exit n mod 5 = 0 #);
+        fizzbuzzy:
+          (# n: @integer enter n exit (n->fizzy) and (n->buzzy) #)
+     enter number
+     do
+        (if true
+         // number->fizzbuzzy then
+            'FizzBuzz'->putText
+         // number->fizzy then
+            'Fizz'->putText
+         // number->buzzy then
+            'Buzz'->putText
+         else
+            number->putInt
+        if);
+        newline
+     #)
+do (for i: 100 repeat i->fizzbuzz for)
+#)  
+
