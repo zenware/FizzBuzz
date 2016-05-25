@@ -6,20 +6,17 @@ ORIGIN '~beta/basiclib/betaenv';
      (#
         number: @integer;
         fizzy: (# n: @integer enter n exit n mod 3 = 0 #);
-        buzzy: (# n: @integer enter n exit n mod 5 = 0 #);
-        fizzbuzzy:
-          (# n: @integer enter n exit (n->fizzy) and (n->buzzy) #)
+        buzzy: (# n: @integer enter n exit n mod 5 = 0 #)
      enter number
      do
-        (if true
-         // number->fizzbuzzy then
-            'FizzBuzz'->putText
-         // number->fizzy then
-            'Fizz'->putText
-         // number->buzzy then
-            'Buzz'->putText
+        (if number->fizzy // true then
+            (if number->buzzy // true then
+                'FizzBuzz'->putText
+             else
+                'Fizz'->putText
+            if)
          else
-            number->putInt
+            (if number->buzzy // true then 'Buzz'->putText else number->putInt if)
         if);
         newline
      #)
