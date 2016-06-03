@@ -1,4 +1,4 @@
-para i de 1 até 101 faça
+para i de 1 até 100 faça
 	se i mod 15 == 0
 		escreva "FizzBuzz"
 	senãose i mod 5 == 0
