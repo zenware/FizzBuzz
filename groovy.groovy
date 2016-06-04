@@ -1,11 +1,14 @@
-(1..100).each {
+def fizzbuzz = {
     if(it % 15 == 0){
-        println "FizzBuzz"
+        "FizzBuzz"
     }else if(it % 3 == 0){
-        println "Fizz"
+        "Fizz"
     }else if(it % 5 == 0){
-        println "Buzz"
+        "Buzz"
     }else{
-        println it
+        it
     }
+}
+(1..100).each {
+    println fizzbuzz(it)
 }
