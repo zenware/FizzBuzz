@@ -1,0 +1,10 @@
+para i de 1 até 100 faça
+	se i mod 15 == 0
+		escreva "FizzBuzz"
+	senãose i mod 5 == 0
+		escreva "Buzz"
+	senãose i mod 3 == 0
+		escreva "Fizz"
+	senão
+		escreva i
+fim
