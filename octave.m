@@ -8,6 +8,6 @@ for number = 1:100
   elseif ( mod(number, 5) == 0 )
     disp('Buzz')
   else
-    disp(number)
+    disp(num2str(number))
   endif
 endfor
