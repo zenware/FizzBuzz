@@ -14,5 +14,5 @@ func FizzBuzz(num: Int) -> () {
 }
 
 for i in 1...100 {
-    FizzBuzz(i)
+    FizzBuzz(num: i)
 }
