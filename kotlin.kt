@@ -6,11 +6,11 @@ fun main(args: Array<String>) {
 
 fun fizzBuzz(n: Int) {
 	println(
-			when (true) {
-				n.divisibleBy(15) -> "FizzBuzz"
-				n.divisibleBy(3) -> "Fizz"
-				n.divisibleBy(5) -> "Buzz"
-				else -> n
-			}
+		when (true) {
+			n.divisibleBy(15) -> "FizzBuzz"
+			n.divisibleBy(3) -> "Fizz"
+			n.divisibleBy(5) -> "Buzz"
+			else -> n
+		}
 	)
 }
