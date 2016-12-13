@@ -1,0 +1,18 @@
+// This output is not the traditional output
+// expected for FizzBuzz but it does generate 
+// CSS classes for appending the correct 
+// FizzBuzz result to an HTML element
+
+@for $i from 1 through 100 {
+  .fizzbuzz-#{$i}:after { 
+    @if $i % 15 == 0 {
+      content: "FizzBuzz";
+    } @else if $i % 5 == 0 {
+      content: "Buzz";
+    } @else if $i % 3 == 0 {
+      content: "Fizz";
+    } @else {
+      content: "#{$i}";
+    }
+  }
+}
