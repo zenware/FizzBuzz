@@ -1,4 +1,4 @@
-#!/usr/bin/env gforth
+#! /usr/bin/env gforth
 
 : FIZZBUZZ ( -- )
   1
