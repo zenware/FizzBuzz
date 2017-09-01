@@ -1,7 +1,7 @@
 #!/usr/bin/env escript
 
 main(_) ->
-    fizz_buzz(0, 101).
+    fizz_buzz(1, 101).
 
 fizz_buzz(Max, Max) ->
     ok;
