@@ -7,6 +7,7 @@ fizzbuzz(n) {
 }
 
 main( ) {
+        extern fizzbuzz;
 	auto i;
 	i = 1;
 	while (i <= 100) fizzbuzz(i++);
