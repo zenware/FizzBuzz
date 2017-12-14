@@ -1,0 +1,27 @@
+HAI 1.2
+I HAS A FIZZBUZZVAR ITZ 1
+IM IN YR FIZZBUZZLOOP UPPIN YR FIZZBUZZVAR TIL BOTH SAEM FIZZBUZZVAR AN 101
+	
+  BOTH SAEM MOD OF FIZZBUZZVAR AN 15 AN 0, O RLY?
+    YA RLY
+      VISIBLE "FizzBuzz"
+    NO WAI
+      
+      BOTH SAEM MOD OF FIZZBUZZVAR AN 5 AN 0, O RLY?
+        YA RLY
+          VISIBLE "Buzz"
+        NO WAI
+          
+          BOTH SAEM MOD OF FIZZBUZZVAR AN 3 AN 0, O RLY?
+            YA RLY
+              VISIBLE "Fizz"
+            NO WAI
+              VISIBLE FIZZBUZZVAR
+            OIC
+          
+      OIC
+      
+    OIC
+
+IM OUTTA YR FIZZBUZZLOOP
+KTHXBYE
