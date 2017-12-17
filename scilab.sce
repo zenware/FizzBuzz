@@ -1,11 +1,11 @@
 for i=1:100
     if modulo(i, 15) == 0 then
-        disp("FizzBuzz")    
+        mprintf("%s\n", "FizzBuzz")    
     elseif modulo(i, 5) == 0 then
-        disp("Buzz")
+        mprintf("%s\n", "Buzz")
     elseif modulo(i, 3) == 0 then
-        disp("Fizz")
+        mprintf("%s\n", "Fizz")
     else
-        disp(i)
+        mprintf("%s\n", string(i))
     end
 end
