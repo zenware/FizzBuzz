@@ -6,3 +6,5 @@ Also as a useful tool to compare program output, I noticed there is some old cod
 Hopefully it will also be useful for building in some sort of continuous integration testing.
 
 Hopefully I can include a list of other similar projects here.
+
+* [MIT-licensed FizzBuzz](https://github.com/shlomif/fizz-buzz) - in several languages, with an explicit licence, and a test suite.
