@@ -13,13 +13,22 @@ int main(void)
 
 void fizzbuzz(int num)
 {
-    if (num % 3 == 0 && num % 5 == 0) {
-        puts("FizzBuzz");
-    } else if (num % 3 == 0) {
-        puts("Fizz");
-    } else if (num % 5 == 0) {
-        puts("Buzz");
+    int printed = 0;
+	
+    if (num % 3 == 0) {
+	    printf("Fizz");
+	    printed = 1;
+    }
+    if (num % 5 == 0) {
+	    printf("Buzz");
+	    printed = 1;
+    }
+	
+    if (printed) {
+	    printf("\n");
+	    return;
     } else {
-        printf("%d\n", num);
+	    printf("%d\n", num);
+	    return;
     }
 }
