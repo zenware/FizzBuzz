@@ -1,12 +1,13 @@
 for (var i = 1; i <= 100; i++)
 {
     if (i % 15 == 0) {
-        show_debug_message("FizzBuzz");
+        draw_text(x,i*12.2,"FizzBuzz");
     } else if (i % 5 == 0) {
-        show_debug_message("Buzz");
+        draw_text(x,i*12.2,"Buzz");
     } else if (i % 3 == 0) {
-        show_debug_message("Fizz");
+        draw_text(x,i*12.2,"Fizz");
     } else {
-        show_debug_message(i);
+        draw_text(x,i*12.2,i);
     }
 }
+
