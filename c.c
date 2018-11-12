@@ -1,10 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 
 void fizzbuzz(int);
 
 int main(void)
 {
-    for (int i = 0; i <= 100; i++) {
+    for (int i = 1; i <= 100; i++) {
         fizzbuzz(i);
     }
 
@@ -14,7 +14,7 @@ int main(void)
 void fizzbuzz(int num)
 {
     int printed = 0;
-	
+
     if (num % 3 == 0) {
 	    printf("Fizz");
 	    printed = 1;
@@ -23,12 +23,10 @@ void fizzbuzz(int num)
 	    printf("Buzz");
 	    printed = 1;
     }
-	
+
     if (printed) {
 	    printf("\n");
-	    return;
     } else {
 	    printf("%d\n", num);
-	    return;
     }
 }
