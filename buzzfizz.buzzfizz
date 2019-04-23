@@ -1,0 +1,18 @@
+# Based on: https://esolangs.org/wiki/BuzzFizz#FizzBuzz
+
+if 100\$a: # do nothing
+else: # do nothing
+
+# $a is the counter.
+$a++
+# if-if-else construct checking whether 3 and 5 divide
+# into the number.
+if 3\$a: print "Fizz"
+if 5\$a: print "Buzz"
+else: print $a
+# Write the trailing newline.
+print "\n"
+
+# Loop if there is more to write.
+if 100\$a: # do nothing
+else: loop
