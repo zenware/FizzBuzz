@@ -13,14 +13,14 @@ library FizzBuzz { private { /* Fizz buzz in Zinc
         PreloadGenStart();
 
         while(Index <= 100) {
-            if( ModuloInteger(Index, 3) == 0 ) {
-                Preload("\t\tFizz\t\t");
+            if( ModuloInteger(Index, 15) == 0 ) {
+                Preload("\t\tFizz Buzz\t");
 
             } else if( ModuloInteger(Index, 5) == 0 ) {
                 Preload("\t\tBuzz\t\t");
 
-            } else if( ModuloInteger(Index, 15) == 0 ) {
-                Preload("\t\tFizzBuzz\t\t");
+            } else if( ModuloInteger(Index, 3) == 0 ) {
+                Preload("\t\tFizz\t\t");
 
             } else {
                 Preload("\t\t" + I2S(Index) + "\t\t");
@@ -28,7 +28,7 @@ library FizzBuzz { private { /* Fizz buzz in Zinc
 
             Index = Index + 1;
         }
-            
+
         PreloadGenEnd("FizzBuzz\\Output.txt");
     }}}
 }}
