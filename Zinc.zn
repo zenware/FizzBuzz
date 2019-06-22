@@ -1,0 +1,35 @@
+//! zinc
+library FizzBuzz { private { /* Fizz buzz in Zinc
+*************************************************************************************
+*
+*   http://www.wc3c.net/vexorian/zincmanual.html
+*
+************************************************************************************/
+
+    struct Main[] { private { static method onInit() {
+        integer Index = 1;
+
+        PreloadGenClear();
+        PreloadGenStart();
+
+        while(Index <= 100) {
+            if( ModuloInteger(Index, 3) == 0 ) {
+                Preload("\t\tFizz\t\t");
+
+            } else if( ModuloInteger(Index, 5) == 0 ) {
+                Preload("\t\tBuzz\t\t");
+
+            } else if( ModuloInteger(Index, 15) == 0 ) {
+                Preload("\t\tFizzBuzz\t\t");
+
+            } else {
+                Preload("\t\t" + I2S(Index) + "\t\t");
+            }
+
+            Index = Index + 1;
+        }
+            
+        PreloadGenEnd("FizzBuzz\\Output.txt");
+    }}}
+}}
+//! endzinc
