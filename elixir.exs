@@ -1,10 +1,8 @@
-fizzbuzz = fn n ->
-  cond do
-    rem(n, 15)== 0 -> "FizzBuzz"
-    rem(n, 3) == 0 -> "Fizz"
-    rem(n, 5) == 0 -> "Buzz"
-    true           -> to_string n
-  end
+fizzbuzz = fn 
+  n when rem(n, 15) == 0 -> "FizzBuzz"
+  n when rem(n,  3) == 0 -> "Fizz"
+  n when rem(n,  5) == 0 -> "Buzz"
+  n                      -> to_string n
 end
 
-Enum.each 1..100, &IO.puts(fizzbuzz.(&1))
+1..100 |> Enum.map(fizzbuzz) |> Enum.each(&IO.puts/1)
