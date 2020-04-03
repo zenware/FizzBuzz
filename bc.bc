@@ -1,0 +1,19 @@
+/* Works with GNU bc */
+
+i = 1
+
+while (i <= 100) {
+  if (i % 3 == 0) {
+    if (i % 5 == 0) print "FizzBuzz\n"
+    if (i % 5 != 0) print "Fizz\n"
+  }
+
+  if (i % 3 != 0) {
+    if (i % 5 == 0) print "Buzz\n"
+    if (i % 5 != 0) print i, "\n"
+  }
+
+  i = i + 1
+}
+
+quit

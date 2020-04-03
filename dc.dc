@@ -1,0 +1,40 @@
+# MACROS
+
+# The following macro prints "Fizz" (without a newline) and writes 1 to register
+# X. We store the macro in register A.
+[[Fizz] P 1 sX] sA
+# This macro prints "Buzz" (without a newline) and writes 1 to register X. We
+# store it in register B.
+[[Buzz] P 1 sX] sB
+# This macro prints the number on the top of the stack with a newline. We store
+# it in register C.
+[p] sC
+# This macro prints a newline. We store it in register D.
+[[
+] P] sD
+
+# MAIN PROGRAM
+
+# We push the current position to the stack. It doesn't have a name, but in the
+# comments we'll call it i.
+1
+
+# Here's the main run loop, which will be written to register F:
+[
+# Register X tells us if we've printed something for the current iteration. We
+# haven't yet, so we write 0 to register X.
+0 sX
+# Calculate i % 3. If it's 0, invoke the macro in register A.
+d 3 % 0 =A
+# Calculate i % 5. If it's 0, invoke the macro in register B.
+d 5 % 0 =B
+# If one or both of the macros was invoked, then register X is now 1. If it's
+# still 0, then nothing has been printed and we need to print i.
+# Read register X. If it's 0, invoke register C. If it's 1, invoke register D.
+lX 0 =C
+lX 1 =D
+# Increment i by 1.
+1 +
+# If i != 101, invoke the macro in register E (which is this one).
+d 101 >E
+] d sE x
