@@ -12,9 +12,6 @@ on fizzbuzz(i)
     end if
 end fizzbuzz
 
-set res to ""
 repeat with i from 1 to 100
-    -- AppleScript support for command line scripting is terrible, so all
-    -- results have to be put into a single string to be printed to STDOUT
-    set res to res & fizzbuzz(i) & "\n"
+    log fizzbuzz(i) -- Print to stdout
 end repeat
