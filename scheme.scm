@@ -1,5 +1,3 @@
-#lang scheme
-
 (define (fizzbuzz i n)
   (display
    (let ((divisbleBy5? (zero? (modulo i 5)))
