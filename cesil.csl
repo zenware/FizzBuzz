@@ -1,0 +1,46 @@
+          LOAD        0
+
+( PROCESS NEXT NUMBER
+MAIN        ADD         1          
+            STORE       NUMBER
+            LOAD        1
+            STORE       NOTFB
+
+( FIZZ CHECK
+CHKF        LOAD        NUMBER          
+            DIVIDE      3
+            MULTIPLY    3
+            SUBTRACT    NUMBER
+            JIZERO      PRTF
+            JUMP        CHKB
+PRTF        PRINT       "Fizz"
+            LOAD        0
+            STORE       NOTFB
+
+( BUZZ CHECK
+CHKB        LOAD        NUMBER
+            DIVIDE      5
+            MULTIPLY    5
+            SUBTRACT    NUMBER
+            JIZERO      PRTB
+            JUMP        PRTN
+PRTB        PRINT       "Buzz"   
+            LOAD        0
+            STORE       NOTFB
+
+( OUTPUT NUMBER IF NOT FIZZ OR BUZZ           
+PRTN        LOAD        NOTFB
+            JIZERO      NEXT
+            LOAD        NUMBER
+            OUT
+ 
+( CURRENT NUMBER CHECK
+NEXT        LOAD        NUMBER
+            SUBTRACT    100
+            JIZERO      END
+            LINE
+            LOAD        NUMBER
+            JUMP        MAIN
+END         HALT
+%
+*
