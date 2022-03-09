@@ -1,0 +1,11 @@
+fizz_buzz = (num: @number) =>
+    match 0 {
+        ==(num%15): "fizzbuzz",
+        ==(num%5): "buzz",
+        ==(num%3): "fizz",
+        else: num as @string,
+    }
+
+for i in 1..101 {
+    $.print(fizz_buzz(i))
+}
