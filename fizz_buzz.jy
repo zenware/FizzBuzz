@@ -1,0 +1,19 @@
+# fizzbuzz written in jsyon (https://github.com/MiloLug/jsyon)
+
+Fn[selector, from, to, $>: [
+    ~>selector [@:~>from] [@:~>from],
+
+    Fn[@..:~>__args_names__, current_fn,
+        @:~>from < [@:~>to] (then-else) [
+            $:~>current_fn[@:~>selector, @:~>from + [:1], @:~>to],
+            $:[:0]
+        ]
+    ] [@..:~>__args__, @:~>__fn__]
+]] (bind) [
+    :import[@branches] test_selector [
+        :Arr[:Fn[t, $:~>t % [:15] ![]], :Fn[$:print[FizzBuzz]]],
+        :Arr[:Fn[t, $:~>t % [:5] ![]], :Fn[$:print[Buzz]]],
+        :Arr[:Fn[t, $:~>t % [:3] ![]], :Fn[$:print[Fizz]]],
+        :Arr[:Fn[t, $:True], :Fn[t, $:print[@:~>t]]],
+    ]
+] [:1, :101]
