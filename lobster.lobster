@@ -1,4 +1,4 @@
-// FizzBuzz in [lobster](https://aardappel.github.io/lobster)
+// FizzBuzz in [lobster](https://www.strlen.com/lobster/)
 
 def fizz(x):
     if x % 15 == 0:
