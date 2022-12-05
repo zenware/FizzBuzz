@@ -1,0 +1,12 @@
+for n = 1 to 100
+    if mod(n, 15) = 0 then 
+        print "FizzBuzz"
+    elsif mod(n, 3) = 0 then 
+        print "Fizz"
+    elsif mod(n, 5) = 0 then 
+        print "Buzz"
+    else 
+        print n
+    endif
+next n
+end
