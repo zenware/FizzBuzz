@@ -1,0 +1,9 @@
+fn fizzbuzz(n: i32) -> string =
+  | n if n % 15 == 0 => "FizzBuzz"
+  | n if n % 3 == 0 => "Fizz"
+  | n if n % 5 == 0 => "Buzz"
+  | n => to_string(n)
+
+fn main() =
+  for i in 1..101 do
+    print(fizzbuzz(i))
